@@ -77,7 +77,7 @@ enum BiometricError: LocalizedError {
 </picture>
 
 
-## 생체 인증 설정 로직 (안드 & iOS 동일)
+## 생체 인증 설정 로직 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ejssong/BiometricIDAuth/assets/59044882/d91cc7dd-d37e-470d-9d2f-353cb66b541f">
