@@ -34,21 +34,20 @@ func canEvaluate(completion: @escaping (Bool, BiometricError?) -> Void) {
         
         return completion(false, biometricError(from: error))
     }
-
     completion(true, nil)
 }
  
 //인증 처리 
 func evaluatePolicy(completion: @escaping (Bool, BiometricError?) -> Void) {
-    let localizedReason = "Verify your identity" //빈 값이면 에러 떨어짐
-    
-		context.evaluatePolicy(policy, localizedReason: localizedReason) { [weak self] success, error in
-				//내부적으로 FaceID 성공, 실패 여부에 따라 처리
+     let localizedReason = "Verify your identity" //빈 값이면 에러 떨어짐
+
+     context.evaluatePolicy(policy, localizedReason: localizedReason) { [weak self] success, error in
+	//내부적으로 FaceID 성공, 실패 여부에 따라 처리
         DispatchQueue.main.async {
-		        if success {
-				        completion(true, nil)
+            if success {
+		completion(true, nil)
             }else {
-		            guard let error = error else { return completion(false, nil) }
+                guard let error = error else { return completion(false, nil) }
                 completion(false, self?.biometricError(from: error as NSError))
             }
         }
