@@ -1,4 +1,4 @@
-# Local Authentication ?  
+# :bulb: Local Authentication ?  
 
 > FaceID , TouchID, OpticID (Vision Pro 출시와 함께 공개된 홍체 인식) 와 같은 생체 인식을 통해서 디바이스에 접근 할 수 있다.
 > 보안상 앱이 직접적으로 인증 데이터에 접근할 수는 없고 `Secure Enclave` 통해서 결과 값만 받을 수 있다.
