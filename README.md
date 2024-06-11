@@ -58,12 +58,12 @@ func evaluatePolicy(completion: @escaping (Bool, BiometricError?) -> Void) {
 ## Error 처리
 ```swift
 enum BiometricError: LocalizedError {
-    case biometryNotAvailable  //생체 인증 지원 X  -> LAError.biometryNotAvailable
-    case biometryNotEnrolled   //생체 인증 등록 X  -> LAError.biometryNotEnrolled
-    case authenticationFailed  //생체 인증 실패    -> LAError.authenticationFailed
-    case userCancel             //셍체 인증 취소   -> LAError.userCancel
-    case userFallback           //패스워드 입력    -> LAError.userFallback
-    case biometryLockout        //생체 인증 잠김   -> LAError.biometryLockout
+    case biometryNotAvailable   //생체 인증 지원 X  -> LAError.biometryNotAvailable
+    case biometryNotEnrolled    //생체 인증 등록 X  -> LAError.biometryNotEnrolled
+    case authenticationFailed   //생체 인증 실패    -> LAError.authenticationFailed
+    case userCancel             //생체 인증 취소    -> LAError.userCancel
+    case userFallback           //패스워드 입력     -> LAError.userFallback
+    case biometryLockout        //생체 인증 잠김    -> LAError.biometryLockout
     case unknown
 }
 ```
