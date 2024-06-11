@@ -1,12 +1,12 @@
-## Local Authentication ?  
+# Local Authentication ?  
 
-FaceID , TouchID, OpticID (Vision Pro 출시와 함께 공개된 홍체 인식) 와 같은 생체 인식을 통해서 디바이스에 접근 할 수 있다. 보안상 앱이 직접적으로 인증 데이터에 접근할 수는 없고 Secure Enclave 통해서 결과 값만 받을 수 있다.
+FaceID , TouchID, OpticID (Vision Pro 출시와 함께 공개된 홍체 인식) 와 같은 생체 인식을 통해서 디바이스에 접근 할 수 있다. 보안상 앱이 직접적으로 인증 데이터에 접근할 수는 없고 `Secure Enclave` 통해서 결과 값만 받을 수 있다.
 
 Foobar is a Python library for dealing with word pluralization.
 
 ## FaceID 권한 요청 방법
 
-![FaceIDInfoPlist](https://github.com/ejssong/BiometricIDAuth/assets/59044882/4575acf5-059d-412f-a85c-c8e5af2272ce)
+<img width = "700" alt="FaceIDInfoPlist" src="https://github.com/ejssong/BiometricIDAuth/assets/59044882/4575acf5-059d-412f-a85c-c8e5af2272ce">
 
 ```swift
 LAPolicy 
@@ -18,6 +18,7 @@ LAContext
 - localizedFallbackTitle //빈 값일 경우 FallBack 버튼을 숨길 수 있다.
 - localizedCancelTitle //바이오 인증 실패 시 나오는 취소 버튼 라벨 
 ```
+
 
 ## 구현 방법
 
@@ -68,9 +69,18 @@ enum BiometricError: LocalizedError {
 
 ## Toss 생체 인증 설정 로직 
 
-![Untitled](https://github.com/ejssong/BiometricIDAuth/assets/59044882/5f063ad4-4e1e-4d69-bc2b-88ef1683c74f)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ejssong/BiometricIDAuth/assets/59044882/7782248e-cbc6-426c-a9ab-d29ed3cbd0c2">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ejssong/BiometricIDAuth/assets/59044882/5f063ad4-4e1e-4d69-bc2b-88ef1683c74f">
+  <img width = "323" alt="tossBioAuthLogic" src="https://github.com/ejssong/BiometricIDAuth/assets/59044882/5f063ad4-4e1e-4d69-bc2b-88ef1683c74f">
+</picture>
+
 
 ## 생체 인증 설정 로직 (안드 & iOS 동일)
 
-![Untitled](https://github.com/ejssong/BiometricIDAuth/assets/59044882/474a6b03-f757-4d6f-b68d-aa7c02dc10b9)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ejssong/BiometricIDAuth/assets/59044882/d91cc7dd-d37e-470d-9d2f-353cb66b541f">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ejssong/BiometricIDAuth/assets/59044882/16a93c51-ded7-4725-833f-c01655666243">
+  <img width = "1000" alt="BioAuthLogic" src="https://github.com/ejssong/BiometricIDAuth/assets/59044882/16a93c51-ded7-4725-833f-c01655666243">
+</picture>
 
