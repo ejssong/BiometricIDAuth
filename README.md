@@ -1,8 +1,10 @@
 # Local Authentication ?  
 
-FaceID , TouchID, OpticID (Vision Pro 출시와 함께 공개된 홍체 인식) 와 같은 생체 인식을 통해서 디바이스에 접근 할 수 있다. 보안상 앱이 직접적으로 인증 데이터에 접근할 수는 없고 `Secure Enclave` 통해서 결과 값만 받을 수 있다.
+> FaceID , TouchID, OpticID (Vision Pro 출시와 함께 공개된 홍체 인식) 와 같은 생체 인식을 통해서 디바이스에 접근 할 수 있다.
+> 보안상 앱이 직접적으로 인증 데이터에 접근할 수는 없고 `Secure Enclave` 통해서 결과 값만 받을 수 있다.
 
-Foobar is a Python library for dealing with word pluralization.
+<img width="640" alt="스크린샷 2024-06-03 오후 1 55 27" src="https://github.com/ejssong/BiometricIDAuth/assets/59044882/c45fb360-eff9-49e8-83b3-1f20793e7f95">
+
 
 ## FaceID 권한 요청 방법
 
